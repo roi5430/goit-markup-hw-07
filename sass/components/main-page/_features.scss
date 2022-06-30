@@ -25,6 +25,5 @@
 
 
 .features__text {
-    font-size: 14px;
-    line-height: 1.7;
+    @include font(14px, 400, 1.7, 0.03em);
 }

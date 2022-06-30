@@ -32,6 +32,31 @@ ul {
   padding-left: 0;
 }
 
+.footer-adr a, .adr-nav__e-mail,
+.adr-nav__tel {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--timing-function);
+}
+.footer-adr a:focus, .adr-nav__e-mail:focus,
+.adr-nav__tel:focus, .footer-adr a:hover, .adr-nav__e-mail:hover,
+.adr-nav__tel:hover {
+  color: var(--accent-color);
+}
+
+.modal-input, .footer-input {
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 4px;
+  transition: border-color var(--timing-function);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-input:focus, .footer-input:focus {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
 .is-hidden {
   position: absolute;
   width: 1px;
@@ -79,8 +104,9 @@ img {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 26px;
-  line-height: 1.2;
   font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   margin-right: 93px;
 }
 
@@ -88,9 +114,10 @@ img {
   color: #fff;
   background-color: var(--accent-color);
   cursor: pointer;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.9;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
   border-radius: 4px;
   min-width: 200px;
   text-align: center;
@@ -105,21 +132,23 @@ img {
 }
 
 .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 50px;
 }
 
 .subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--title-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .list-social-item {
@@ -187,10 +216,11 @@ ul {
 .site-nav {
   display: flex;
 }
-.site-nav.current {
+
+.site-nav .current {
   color: var(--accent-color);
 }
-.site-nav.current:after {
+.site-nav .current::after {
   content: "";
   display: block;
   width: 100%;
@@ -211,8 +241,8 @@ ul {
   position: relative;
   color: var(--title-color);
   text-decoration: none;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
   display: block;
@@ -238,24 +268,15 @@ ul {
 
 .adr-nav__e-mail,
 .adr-nav__tel {
-  text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0 32px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: color var(--timing-function);
-}
-.adr-nav__e-mail:focus, .adr-nav__e-mail:hover,
-.adr-nav__tel:focus,
-.adr-nav__tel:hover {
-  color: var(--accent-color);
 }
 
 .adr-nav__symbol {
@@ -284,10 +305,11 @@ ul {
 
 .hero-title {
   color: var(--white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.2;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
   max-width: 696px;
 }
 
@@ -318,7 +340,9 @@ ul {
 
 .features__text {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* -------------- Gellary---------------- */
@@ -385,11 +409,12 @@ ul {
 }
 
 .team__subtitle {
-  font-weight: 500;
-  line-height: 1.2;
   color: var(--title-color);
   margin-bottom: 10px;
-  font-style: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .team__text {
@@ -447,7 +472,6 @@ ul {
   margin-right: 0;
   margin-bottom: 20px;
   color: var(--white-color);
-  font-family: "Raleway", sans-serif;
 }
 .footer .container {
   display: flex;
@@ -465,18 +489,14 @@ address {
 
 .footer-adr {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.7;
+  letter-spacing: 0.03em;
   color: var(--white-color);
 }
 
 .footer-adr a {
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color var(--timing-function);
-}
-.footer-adr a:focus, .footer-adr a:hover {
-  color: var(--accent-color);
 }
 
 .footer-adr > li {
@@ -508,24 +528,20 @@ address {
 }
 
 .footer-input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   width: 358px;
   height: 50px;
   margin: 20px 12px 0 0;
   padding-left: 16px;
-  background-color: transparent;
-  outline: transparent;
   color: var(--white-color);
   font-size: 16px;
-  border-radius: 4px;
-  transition: border-color var(--timing-function);
 }
 .footer-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
 .footer-field {
@@ -611,19 +627,9 @@ address {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  background: transparent;
   padding-left: 42px;
   color: var(--primary-text-color);
-  transition: border-color var(--timing-function);
 }
-
-.modal-input:focus,
-.footer-input:focus {
-  border-color: var(--accent-color);
-  outline: transparent;
-}
-
 .modal-btn {
   display: block;
   margin: 0 auto;

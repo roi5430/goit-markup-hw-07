@@ -21,10 +21,9 @@
 
 .hero-title {
     color: var(--white-color);
-
-    letter-spacing: 0.06em;
+    
+    @include font(44px, 900, 1.2, 0.06em);  
+    
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
     max-width: 696px;
 }

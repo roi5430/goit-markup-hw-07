@@ -22,10 +22,12 @@ ul {
 
 .site-nav {
     display: flex;
-    &.current {
-        color: var(--accent-color);
-   
-        &:after {
+}
+
+.site-nav .current {
+    color: var(--accent-color);
+
+    &::after {
         content: '';
         display: block;
         width: 100%;
@@ -35,9 +37,8 @@ ul {
         bottom: -1px;
         left: 0;
         position: absolute;
-        
+
         transition: background-color var(--timing-function);
-        }
     }
 }
 
@@ -51,10 +52,8 @@ ul {
     color: var(--title-color);
 
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+
+    @include font(14px, 500, 1.1, 0.02em);
 
     display: block;
     padding-top: 32px;
@@ -82,29 +81,19 @@ ul {
 
 .adr-nav__e-mail,
 .adr-nav__tel {
-    text-decoration: none;
+    @extend %mail-tel;
+    
     color: var(--primary-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    padding: 32px 0 32px 0;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-
-    cursor: pointer;
-
-    transition: color var(--timing-function);
-   
-    &:focus,
-    &:hover {
-        color: var(--accent-color);
-    }
 }
 
 .adr-nav__symbol {

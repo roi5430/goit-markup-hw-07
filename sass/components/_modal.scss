@@ -73,20 +73,13 @@
     height: 40px;
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    background: transparent;
+   
     padding-left: 42px;
     color: var(--primary-text-color);
-    transition: border-color var(--timing-function);
+    @extend %input;
+    &:focus{
+        @extend %input-focus;}
 }
-
-.modal-input:focus,
-.footer-input:focus {
-    border-color: var(--accent-color);
-    outline: transparent;
-}
-
 
 .modal-btn {
     display: block;
