@@ -1,0 +1,27 @@
+@import './utils/variables';
+
+@import './utils/reset';
+@import './utils/hidden';
+
+@import './components/common';
+@import './components/logo';
+@import './components/main-btn';
+@import './components/title';
+@import './components/subtitle';
+@import './components/social-sprite';
+
+
+@import './components/header';
+@import './components/main-page/hero';
+@import './components/main-page/features';
+@import './components/main-page/gellary';
+@import './components/main-page/team';
+@import './components/main-page/clients';
+@import './components/footer';
+@import './components/modal';
+
+
+
+@import './components/portfolio/filters';
+@import './components/portfolio/cards';
+

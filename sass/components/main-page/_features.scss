@@ -1,0 +1,30 @@
+/* -------------- Features-------------- */
+.features {
+    display: flex;
+}
+
+.features__item {
+    width: calc(100% / 4 - var(--typical-margin));
+    margin-right: var(--typical-margin);
+    &:last-child {
+     margin-right: 0;
+    }
+}
+
+.features__trumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--btn-background-color);
+    border-radius: 4px;
+    margin-bottom: var(--typical-margin);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.7;
+}
