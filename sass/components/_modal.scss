@@ -61,9 +61,7 @@
 }
 
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23 / 20);
+    @include font(20px, 700, 1.15, 0.03em);
     text-align: center;
     color: var(--title-color);
     margin-bottom: 12px;
@@ -90,10 +88,7 @@
     display: block;
     margin-top: 10px;
     margin-bottom: 4px;
-
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+    @include font(12px, 400, 1.2, 0.01em);
 }
 
 .comment {
@@ -103,9 +98,7 @@
     margin-bottom: 0;
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
-        font-size: 14px;
-        line-height: calc(16 / 14);
-        letter-spacing: 0.01em;
+        @include font(14px, 400, 1.14, 0.01em);
     }
 }
 
@@ -131,9 +124,7 @@
 }
 
 .check-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 400, 1.71, 0.03em);
     display: flex;
     align-items: center;
     justify-content: center;
