@@ -1,14 +1,10 @@
 .list-social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 16px;
 }
 
 .social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 
     background-color: var(--white-color);
     border-radius: 50%;
@@ -24,9 +20,7 @@
 .social-link {
     height: 44px;
     width: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     border-radius: 50%;
     cursor: pointer;
 

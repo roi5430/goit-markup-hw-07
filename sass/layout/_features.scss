@@ -12,9 +12,7 @@
 }
 
 .features__trumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     height: 120px;
     background-color: var(--btn-background-color);
     border-radius: 4px;

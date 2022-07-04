@@ -50,7 +50,6 @@ ul {
     position: relative;
 
     color: var(--title-color);
-
     text-decoration: none;
 
     @include font(14px, 500, 1.1, 0.02em);
@@ -73,8 +72,7 @@ ul {
 }
 
 .adr-nav {
-    display: flex;
-    align-items: center;
+    @include flex;
     color: var(--title-color);
     margin-left: auto;
 }
@@ -82,19 +80,13 @@ ul {
 .adr-nav__e-mail,
 .adr-nav__tel {
     @extend %mail-tel;
-    
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-
+    @include flex;
     padding: 32px 0 32px 0;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    color: var(--primary-text-color); 
+    @include font(14px, 500, 1.1, 0.02em);
 }
+  
 
 .adr-nav__symbol {
     margin-right: 10px;

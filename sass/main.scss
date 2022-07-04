@@ -1,9 +1,9 @@
 @import './utils/variables';
 
-@import './utils/reset';
+@import './base/reset';
 @import './utils/mixin';
 @import './utils/placeholder';
-@import './utils/hidden';
+@import './base/hidden';
 
 @import './components/common';
 @import './components/logo';
@@ -13,17 +13,18 @@
 @import './components/social-sprite';
 
 
-@import './components/header';
-@import './components/main-page/hero';
-@import './components/main-page/features';
-@import './components/main-page/gellary';
-@import './components/main-page/team';
-@import './components/main-page/clients';
-@import './components/footer';
-@import './components/modal';
+
+@import './layout/hero';
+@import './layout/header';
+@import './layout/features';
+@import './layout/gellary';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/modal';
 
 
 
-@import './components/portfolio/filters';
-@import './components/portfolio/cards';
+@import './layout/filters';
+@import './layout/cards';
 

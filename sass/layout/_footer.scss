@@ -101,9 +101,7 @@ address {
 }
 
 .footer-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     height: 50px;
 }
 

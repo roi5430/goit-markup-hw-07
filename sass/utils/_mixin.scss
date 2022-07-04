@@ -4,3 +4,9 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
+
+@mixin flex($fl:flex, $jc:center, $ai:center) {
+    display: $fl;
+    justify-content: $jc;
+    align-items: $ai;
+}
