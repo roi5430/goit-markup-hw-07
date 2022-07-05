@@ -5,9 +5,8 @@
 body {
     background-color: var(--white-color);
     color: var(--primary-text-color);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    letter-spacing: 0.03em;
+    font-family: $font-family;
+    font-size: $font-size;
 }
 
 .container {

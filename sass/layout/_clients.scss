@@ -1,12 +1,12 @@
 /* -------------Clients--------------- */
-.clients-list {
+.clients__list {
     display: flex;
     align-items: center;
 
     margin-right: calc(-1 * var(--typical-margin));
 }
 
-.client-item {
+.client__item {
     margin-right: var(--typical-margin);
     width: calc(100% / 6 - var(--typical-margin));
     &:last-child {
@@ -15,19 +15,19 @@
 }
 
 
-.client {
+.client__icon {
     fill: var(--svg-color);
     cursor: pointer;
 
     transition: fill 250ms linear;
     
-    .client-item-link:hover &,
-    .client-item-link:focus & {
+    .client__link:hover &,
+    .client__link:focus & {
         fill: var(--accent-color);
     }
 }
 
-.client-item-link {
+.client__link {
     @include flex;
     width: 100%;
     border-radius: 4px;
@@ -35,7 +35,7 @@
     height: 92px;
     cursor: pointer;
 
-    transition: border var(--timing-function);
+    transition: border $timing-function;
 
     &:hover,
     &:focus {

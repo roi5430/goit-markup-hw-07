@@ -8,7 +8,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity var(--timing-function);
+    transition: opacity $timing-function;
     opacity: 1;
     .is-hidden {
         opacity: 0;
@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--timing-function);
+    transition: transform $timing-function;
     min-width: 528px;
     min-height: 581px;
 
@@ -45,7 +45,7 @@
 
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill var(--timing-function);
+    transition: fill $timing-function;
     
     &:hover, &:focus{
         fill: var(--accent-color);
@@ -112,7 +112,7 @@
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill var(--timing-function);
+    transition: fill $timing-function;
     
     .modal-input:focus+&{
         fill: var(--accent-color);
@@ -130,7 +130,7 @@
 
 .check-text a {
     color: var(--accent-color);
-    transition: color var(--timing-function);
+    transition: color $timing-function;
 
     &:hover,
     &:focus {
@@ -145,7 +145,7 @@
     margin-right: 7px;
 
     @include flex;
-    transition: border var(--timing-function), box-shadow var(--timing-function);
+    transition: border $timing-function, box-shadow $timing-function;
     
     .input-check:focus+& {
         border: 2px solid var(--accent-color);

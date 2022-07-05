@@ -10,22 +10,21 @@
 }
 
 
-.filters-btn {
+.filters__btn {
     background-color: var(--btn-background-color);
     color: var(--title-color);
     border-radius: 4px;
 
-    font-weight: 500;
-    line-height: 1.6;
+    @include font(16px, 500, 1.6, 0.03em);
     text-align: center;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
 
     border: none;
     padding: 6px 22px;
 
-    transition: background-color var(--timing-function), color var(--timing-function), filter var(--timing-function);
-  
+    transition: background-color $timing-function, color $timing-function, filter $timing-function;
+    
+    &--active,
     &:focus,
     &:hover,
     &:active {

@@ -2,7 +2,7 @@
     
     text-decoration: none;
     cursor: pointer;
-    transition: color var(--timing-function);
+    transition: color $timing-function;
 
     &:focus,
     &:hover {
@@ -14,7 +14,7 @@
     background-color: transparent;
     outline: transparent;
     border-radius: 4px;
-    transition: border-color var(--timing-function);
+    transition: border-color $timing-function;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 

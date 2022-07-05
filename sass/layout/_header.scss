@@ -24,7 +24,7 @@ ul {
     display: flex;
 }
 
-.site-nav .current {
+.site-nav__link--current {
     color: var(--accent-color);
 
     &::after {
@@ -38,7 +38,7 @@ ul {
         left: 0;
         position: absolute;
 
-        transition: background-color var(--timing-function);
+        transition: background-color $timing-function;
     }
 }
 
@@ -59,7 +59,7 @@ ul {
     padding-bottom: 32px;
     cursor: pointer;
 
-    transition: color var(--timing-function);
+    transition: color $timing-function;
     &:hover,
     &:focus {
         color: var(--accent-color);

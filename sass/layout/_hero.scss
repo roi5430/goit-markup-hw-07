@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-.hero-title {
+.hero__title {
     color: var(--white-color);
     
     @include font(44px, 900, 1.2, 0.06em);  
